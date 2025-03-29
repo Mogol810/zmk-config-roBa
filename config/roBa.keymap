@@ -104,8 +104,6 @@
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C     &kp V        &kp COMMA      &kp PERIOD     &kp G        &kp D  &kp M  &kp J  &kp B
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mkp MB1  &lt 5 SPACE  &mkp MB2       &kp BACKSPACE  &lt 2 ENTER                       &lt 6 DELETE
             >;
-
-            sensor-bindings = <&inc_dec_kp A B>;
         };
 
         mac {
@@ -115,6 +113,8 @@
 &kp LEFT_SHIFT  &kp Z   &kp X         &kp C     &kp V        &kp COMMA      &kp PERIOD     &kp G        &kp D  &kp M  &kp J  &kp B
 &kp LCTRL       &trans  &kp LEFT_ALT  &mkp MB1  &lt 5 SPACE  &mkp MB2       &kp BACKSPACE  &lt 3 ENTER                       &lt 6 DEL
             >;
+
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         ARROW_Win {
