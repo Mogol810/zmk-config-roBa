@@ -105,7 +105,7 @@
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mkp MB1  &lt 5 SPACE  &mkp MB2       &kp BACKSPACE  &lt 2 ENTER                       &lt 6 DELETE
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp A B>;
         };
 
         mac {
