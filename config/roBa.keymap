@@ -98,7 +98,9 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
             // 追加: スクロールのタップ時間を設定 (20ms)
+
             tap-ms = <20>;
         };
 
@@ -106,7 +108,9 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             // 追加: スクロールのタップ時間を設定 (20ms)
+
             tap-ms = <20>;
         };
     };
@@ -122,7 +126,7 @@
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mkp MB1  &lt 5 SPACE  &mkp MB2       &kp BACKSPACE  &lt 2 ENTER                       &lt 6 DELETE
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_up_down_Win>;
         };
 
         mac {
@@ -133,7 +137,7 @@
 &kp LCTRL       &trans  &kp LEFT_ALT  &mkp MB1  &lt 5 SPACE  &mkp MB2       &kp BACKSPACE  &lt 3 ENTER                       &lt 6 DEL
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_up_down_Mac>;
         };
 
         ARROW_Win {
