@@ -94,7 +94,6 @@
             toggle-mode = "off";
         };
 
-
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -103,7 +102,6 @@
             // 追加: スクロールのタップ時間を設定 (20ms)
 
             tap-ms = <20>;
-
         };
     };
 
@@ -118,7 +116,7 @@
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mkp MB1  &lt 5 SPACE  &mkp MB2       &kp BACKSPACE  &lt 2 ENTER                       &lt 6 DELETE
             >;
 
-            sensor-bindings = <&scroll_up_down_Win>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         mac {
@@ -129,7 +127,7 @@
 &kp LCTRL       &trans  &kp LEFT_ALT  &mkp MB1  &lt 5 SPACE  &mkp MB2       &kp BACKSPACE  &lt 3 ENTER                       &lt 6 DEL
             >;
 
-            sensor-bindings = <&scroll_up_down_Mac>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         ARROW_Win {
