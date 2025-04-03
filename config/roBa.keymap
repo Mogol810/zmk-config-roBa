@@ -108,7 +108,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            bindings = <&mkp LCLK>, <&kp LC(LCTL)>;
+            bindings = <&mkp MB1>, <&kp LCTL>;
         };
     };
 
