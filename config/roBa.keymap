@@ -130,10 +130,10 @@
 
         ARROW_Win {
             bindings = <
-&kp TAB         &trans    &kp PG_UP      &trans   &trans                           &trans  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)  &trans
-&kp BACKSPACE   &kp HOME  &kp PAGE_DOWN  &kp END  &trans       &trans      &trans  &trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT    &kp DELETE
-&kp LEFT_SHIFT  &trans    &trans         &trans   &trans       &trans      &trans  &trans  &trans           &trans          &trans       &trans
-&trans          &trans    &trans         &trans   &lt 7 SPACE  &trans      &trans  &trans                                                &trans
+&kp TAB         &trans     &kp PG_UP      &trans     &trans                           &trans  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)  &trans
+&kp BACKSPACE   &kp HOME   &kp PAGE_DOWN  &kp END    &trans       &trans      &trans  &trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT    &kp DELETE
+&kp LEFT_SHIFT  &kp LC(X)  &kp LC(C)      &kp LC(V)  &trans       &trans      &trans  &trans  &trans           &trans          &trans       &trans
+&trans          &trans     &trans         &trans     &lt 7 SPACE  &trans      &trans  &trans                                                &trans
             >;
         };
 
@@ -141,7 +141,7 @@
             bindings = <
 &kp TAB         &trans              &kp UP_ARROW    &trans               &trans                           &trans  &kp LS(LC(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans
 &kp BACKSPACE   &kp LG(LEFT_ARROW)  &kp DOWN_ARROW  &kp LG(RIGHT_ARROW)  &trans       &trans      &trans  &trans  &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE
-&kp LEFT_SHIFT  &trans              &trans          &trans               &trans       &trans      &trans  &trans  &trans           &trans          &trans           &trans
+&kp LEFT_SHIFT  &kp LG(X)           &kp LG(C)       &kp LG(V)            &trans       &trans      &trans  &trans  &trans           &trans          &trans           &trans
 &trans          &trans              &trans          &trans               &lt 7 SPACE  &trans      &trans  &trans                                                    &trans
             >;
         };
