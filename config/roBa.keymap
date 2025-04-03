@@ -106,6 +106,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "CLICK_CTRL";
             #binding-cells = <0>;
+            bindings = <&kp LCTL>, <&mk MOUSE_BTN1>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
         };
