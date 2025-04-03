@@ -106,6 +106,8 @@
             label = "MOUSE_TAP_HOLD";
         };
     };
+
+    
     keymap {
         compatible = "zmk,keymap";
 
