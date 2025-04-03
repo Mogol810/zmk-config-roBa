@@ -101,10 +101,15 @@
             tap-ms = <20>;
         };
 
-        mouse_tap_hold: mouse_tap_hold {
-            compatible = "zmk,behavior-mouse-tap-hold";
-            label = "MOUSE_TAP_HOLD";
-        };
+        behaviors {
+            click_ctrl: behavior_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CLICK_CTRL";
+            #binding-cells = <0>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+      };
+};
     };
 
     
