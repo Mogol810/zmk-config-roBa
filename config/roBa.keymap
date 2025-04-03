@@ -108,6 +108,7 @@
 
         win {
             bindings = <
+
 &kp Q               &kp L         &kp U         &kp COMMA    &kp PERIOD                                         &kp F          &kp W  &kp R  &kp Y  &kp P
 &mt LEFT_CONTROL E  &kp I         &kp A         &kp O        &kp MINUS        &mkp MB3           &kp EQUAL      &kp K          &kp T  &kp N  &kp S  &kp H
 &mt LEFT_SHIFT Z    &kp X         &kp C         &kp V        &kp SEMICOLON    &kp BACKSLASH      &kp SLASH      &kp G          &kp D  &kp M  &kp J  &kp B
@@ -120,7 +121,7 @@
         mac {
             bindings = <
 &kp Q             &kp L         &kp U      &kp COMMA     &kp PERIOD                                       &kp F        &kp W  &kp R  &kp Y  &kp P
-&mt LEFT_GUI E    &kp I         &kp A      &kp O         &kp MINUS      &mkp MB3           &kp EQUAL      &kp K        &kp T  &kp N  &kp S  &kp H
+&kp E             &kp I         &kp A      &kp O         &kp MINUS      &mkp MB3           &kp EQUAL      &kp K        &kp T  &kp N  &kp S  &kp H
 &mt LEFT_SHIFT Z  &kp X         &kp C      &kp V         &kp SEMICOLON  &kp BACKSLASH      &kp SLASH      &kp G        &kp D  &kp M  &kp J  &kp B
 &kp LEFT_GUI      &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &lt 5 SPACE    &kp LG(SPACE)      &kp BACKSPACE  &lt 3 ENTER                       &lt 6 DEL
             >;
