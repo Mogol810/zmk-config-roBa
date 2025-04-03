@@ -102,13 +102,13 @@
             tap-ms = <20>;
         };
 
-        click_ctrl: behavior_hold_tap {
+        my_hold_tap_ctrl_mouse: behavior_hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "CLICK_CTRL";
+            label = "HT_CTRL_MOUSE";
             #binding-cells = <0>;
-            bindings = <&kp LCTL>, <&mkp MB1>;
-            flavor = "hold-preferred";
             tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&mkp LCLK>, <&kp LC(LCTL)>;
         };
     };
 
