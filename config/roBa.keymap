@@ -42,6 +42,16 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        left_click {
+            bindings = <&mkp MB1>;
+            key-positions = <18 19>;
+        };
+
+        right_click {
+            bindings = <&mkp MB2>;
+            key-positions = <19 20>;
+        };
     };
 
     macros {
@@ -75,6 +85,13 @@
             #binding-cells = <0>;
             bindings = <&kp EXCLAMATION &kp LS(K) &kp U &kp R &kp A &kp I &kp T &kp O &kp NUMBER_0 &kp NUMBER_2 &kp NUMBER_0 &kp NUMBER_3 &kp NUMBER_2 &kp NUMBER_3 &kp EXCLAMATION>;
             label = "PASSWORDT";
+        };
+
+        e_mail: e_mail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(K) &kp Y &kp K &kp O &kp S &kp I &kp AT_SIGN &kp I &kp B &kp M &kp PERIOD &kp C &kp O &kp M>;
+            label = "E_MAIL";
         };
     };
 
@@ -165,10 +182,10 @@
 
         SCROLL {
             bindings = <
-&kp ESCAPE    &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp MINUS                      &trans              &kp F7  &kp F8  &kp F9  &kp F10
-&kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &kp PLUS   &trans      &trans  &kp LG(LEFT_SHIFT)  &kp F4  &kp F5  &kp F6  &kp F11
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp EQUAL  &trans      &trans  &passwordt          &kp F1  &kp F2  &kp F3  &kp F12
-&kp SLASH     &kp LG(Z)     &kp LG(LS(Z))  &trans        &trans     &trans      &trans  &lt 7 ENTER                                 &trans
+&kp ESCAPE    &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp MINUS                       &trans              &kp F7  &kp F8  &kp F9  &kp F10
+&kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &kp PLUS   &trans      &trans   &kp LG(LEFT_SHIFT)  &kp F4  &kp F5  &kp F6  &kp F11
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp EQUAL  &trans      &e_mail  &passwordt          &kp F1  &kp F2  &kp F3  &kp F12
+&kp SLASH     &kp LG(Z)     &kp LG(LS(Z))  &trans        &trans     &trans      &trans   &lt 7 ENTER                                 &trans
             >;
         };
 
