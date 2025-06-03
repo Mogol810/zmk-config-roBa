@@ -54,7 +54,7 @@
         };
 
         scroll {
-            bindings = <&sl 5>;
+            bindings = <&lt 5 ESCAPE>;
             key-positions = <18 20>;
         };
 
