@@ -52,6 +52,11 @@
             bindings = <&mkp MB2>;
             key-positions = <19 20>;
         };
+
+        scroll {
+            bindings = <&tog 5>;
+            key-positions = <18 20>;
+        };
     };
 
     macros {
