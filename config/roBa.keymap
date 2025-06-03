@@ -40,7 +40,7 @@
 
         eq {
             bindings = <&kp EQUAL>;
-            key-positions = <13 12>;
+            key-positions = <25 24>;
         };
 
         left_click {
@@ -80,7 +80,7 @@
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <12 11>;
+            key-positions = <24 23>;
         };
     };
 
