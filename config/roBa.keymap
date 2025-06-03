@@ -28,13 +28,13 @@
             key-positions = <12 13>;
         };
 
-        muhennkann {
-            bindings = <&bt0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+        quotation {
+            bindings = <&kp SQT>;
+            key-positions = <32 33>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
+        semi-colon {
+            bindings = <&kp SEMICOLON>;
             key-positions = <20 21>;
         };
 
@@ -56,6 +56,26 @@
         scroll {
             bindings = <&tog 5>;
             key-positions = <18 20>;
+        };
+
+        comma {
+            bindings = <&kp COMMA>;
+            key-positions = <30 31>;
+        };
+
+        period {
+            bindings = <&kp PERIOD>;
+            key-positions = <32 31>;
+        };
+
+        slash {
+            bindings = <&kp SLASH>;
+            key-positions = <8 9>;
+        };
+
+        back_slash {
+            bindings = <&kp NON_US_BACKSLASH>;
+            key-positions = <8 7>;
         };
     };
 
