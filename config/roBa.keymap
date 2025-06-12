@@ -140,7 +140,7 @@
         e_mail: e_mail {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(K) &kp Y &kp K &kp O &kp S &kp I &kp AT_SIGN &kp I &kp B &kp M &kp PERIOD &kp C &kp O &kp M>;
+            bindings = <&kp LS(K) &kp Y &kp K &kp O &kp S &kp E &kp I &kp AT_SIGN &kp I &kp B &kp M &kp PERIOD &kp C &kp O &kp M>;
             label = "E_MAIL";
         };
     };
