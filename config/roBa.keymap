@@ -48,7 +48,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_off 0 &tog_off 1>,
+                <&tog_off 1 &tog_off 0>,
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 0>,
                 <&macro_wait_time 500>;
@@ -60,11 +60,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_off 0 &tog_off 1>,
+                <&tog_off 1 &tog_off 0>,
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 1>,
                 <&macro_wait_time 500>,
-                <&tog_on 1>;
+                <&tog_on 0>;
 
             label = "NEW_MACRO";
         };
@@ -108,23 +108,23 @@
     keymap {
         compatible = "zmk,keymap";
 
-        win {
+        mac {
             bindings = <
-&kp TAB         &kp Q         &kp L         &kp U     &kp MINUS                                  &kp F        &kp W  &kp R  &kp Y  &kp P
-&kp LCTRL       &kp E         &kp I         &kp A     &kp O        &mkp MB3       &kp SEMICOLON  &kp K        &kp T  &kp N  &kp S  &kp H
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C     &kp V        &kp COMMA      &kp PERIOD     &kp G        &kp D  &kp M  &kp J  &kp B
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mkp MB1  &lt 5 SPACE  &mkp MB2       &kp BACKSPACE  &lt 2 ENTER                       &lt 6 DELETE
+&kp Q             &kp L         &kp U         &kp COMMA  &kp PERIOD                                                    &kp F        &kp W  &kp R  &kp Y  &kp P
+&kp E             &kp I         &kp A         &kp O      &kp MINUS      &mkp MB3                        &kp EQUAL      &kp K        &kp T  &kp N  &kp S  &kp H
+&mt LEFT_SHIFT Z  &kp I         &kp C         &kp V      &kp SEMICOLON  &kp NON_US_BACKSLASH            &kp SLASH      &kp G        &kp D  &kp M  &kp J  &kp B
+&kp LEFT_SHIFT    &kp LEFT_GUI  &kp LEFT_ALT  &mkp MB1   &lt 5 SPACE    &mt LEFT_COMMAND LG(SPACE)      &kp BACKSPACE  &lt 3 ENTER                       &lt 6 DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
         };
 
-        mac {
+        win {
             bindings = <
-&kp TAB         &kp Q   &kp L         &kp U     &kp MINUS                                  &kp F        &kp W  &kp R  &kp Y  &kp P
-&kp LEFT_GUI    &kp E   &kp I         &kp A     &kp O        &mkp MB3       &kp SEMICOLON  &kp K        &kp T  &kp N  &kp S  &kp H
-&kp LEFT_SHIFT  &kp Z   &kp X         &kp C     &kp V        &kp COMMA      &kp PERIOD     &kp G        &kp D  &kp M  &kp J  &kp B
-&kp LCTRL       &trans  &kp LEFT_ALT  &mkp MB1  &lt 5 SPACE  &mkp MB2       &kp BACKSPACE  &lt 3 ENTER                       &lt 6 DEL
+&trans  &trans        &trans  &trans  &trans                                                 &kp F        &kp W  &kp R  &kp Y  &kp P
+&trans  &trans        &trans  &trans  &trans  &trans                          &trans         &kp K        &kp T  &kp N  &kp S  &kp H
+&trans  &trans        &trans  &trans  &trans  &trans                          &trans         &kp G        &kp D  &kp M  &kp J  &kp B
+&trans  &kp LEFT_WIN  &trans  &trans  &trans  &mt LEFT_CONTROL LC(SPACE)      &kp BACKSPACE  &lt 2 ENTER                       &lt 6 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -150,10 +150,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
