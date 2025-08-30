@@ -82,8 +82,15 @@
         pass: pass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(K) &kp U &kp R &kp A &kp I &kp T &kp O &kp N0 &kp N2 &kp>;
+            bindings = <&kp LS(K) &kp U &kp R &kp A &kp I &kp T &kp O &kp N0 &kp N2 &kp N0 &kp NUMBER_3 &kp NUMBER_2 &kp NUMBER_3 &kp EXCLAMATION &kp EXCLAMATION>;
             label = "PASS";
+        };
+
+        mail: mail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(K) &kp Y &kp K &kp O &kp S &kp E &kp I &kp AT_SIGN &kp I &kp B &kp M &kp PERIOD &kp C &kp O &kp M>;
+            label = "MAIL";
         };
     };
 
