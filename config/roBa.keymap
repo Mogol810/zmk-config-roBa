@@ -27,19 +27,29 @@
             key-positions = <12 13>;
         };
 
-        muhennkann {
-            bindings = <&bt0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
+        semi_colon {
+            bindings = <&kp SEMICOLON>;
             key-positions = <20 21>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        quotation {
+            bindings = <&kp SQT>;
+            key-positions = <32 33>;
+        };
+
+        right_click {
+            bindings = <&mkp MB1>;
+            key-positions = <18 19>;
+        };
+
+        left_click {
+            bindings = <&mkp MB2>;
+            key-positions = <19 20>;
+        };
+
+        scroll {
+            bindings = <&to 5>;
+            key-positions = <18 20>;
         };
     };
 
@@ -67,6 +77,13 @@
                 <&tog_on 0>;
 
             label = "NEW_MACRO";
+        };
+
+        pass: pass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(K) &kp U &kp R &kp A &kp I &kp T &kp O &kp N0 &kp N2 &kp>;
+            label = "PASS";
         };
     };
 
