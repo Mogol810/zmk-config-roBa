@@ -165,10 +165,10 @@
 
         ARROW_Mac {
             bindings = <
-&kp ESCAPE      &trans         &trans              &kp UP_ARROW    &trans                                   &trans  &kp LS(LC(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans
-&trans          &kp BACKSPACE  &kp LG(LEFT_ARROW)  &kp DOWN_ARROW  &kp LG(RIGHT_ARROW)  &trans      &trans  &trans  &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE
-&kp LEFT_SHIFT  &kp LG(X)      &kp LG(C)           &kp LG(V)       &trans               &trans      &trans  &trans  &trans           &trans          &trans           &trans
-&trans          &trans         &trans              &trans          &lt 7 SPACE          &trans      &trans  &trans                                                    &trans
+&kp ESCAPE      &trans              &kp UP_ARROW    &trans               &trans                           &trans  &kp LS(LC(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans
+&kp BACKSPACE   &kp LG(LEFT_ARROW)  &kp DOWN_ARROW  &kp LG(RIGHT_ARROW)  &trans       &trans      &trans  &trans  &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE
+&kp LEFT_SHIFT  &kp LG(X)           &kp LG(C)       &kp LG(V)            &trans       &trans      &trans  &trans  &trans           &trans          &trans           &trans
+&trans          &trans              &trans          &trans               &lt 7 SPACE  &trans      &trans  &trans                                                    &trans
             >;
         };
 
