@@ -82,7 +82,7 @@
         p: pass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(K) &kp U &kp R &kp A &kp I &kp T &kp O &kp N0 &kp N2 &kp N0 &kp NUMBER_3 &kp NUMBER_2 &kp NUMBER_3 &kp EXCLAMATION &kp EXCLAMATION>;
+            bindings = <&kp LS(K) &kp U &kp R &kp A &kp I &kp T &kp O &kp EXCLAMATION &kp N0 &kp N2 &kp N0 &kp NUMBER_3 &kp NUMBER_2 &kp NUMBER_3 &kp EXCLAMATION>;
             label = "PASS";
         };
 
@@ -156,10 +156,10 @@
 
         ARROW_Win {
             bindings = <
-&trans  &trans         &trans    &kp PAGE_UP    &trans                           &trans  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)  &trans
-&trans  &kp BACKSPACE  &kp HOME  &kp PAGE_DOWN  &kp END      &trans      &trans  &trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT    &kp DELETE
-&trans  &trans         &trans    &trans         &trans       &trans      &trans  &trans  &trans           &trans          &trans       &trans
-&trans  &trans         &trans    &trans         &lt 7 SPACE  &trans      &trans  &trans                                                &trans
+&trans         &trans    &kp PAGE_UP    &trans   &trans                           &trans  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)  &trans
+&kp BACKSPACE  &kp HOME  &kp PAGE_DOWN  &kp END  &trans       &trans      &trans  &trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT    &kp DELETE
+&trans         &trans    &trans         &trans   &trans       &trans      &trans  &trans  &trans           &trans          &trans       &trans
+&trans         &trans    &trans         &trans   &lt 7 SPACE  &trans      &trans  &trans                                                &trans
             >;
         };
 
