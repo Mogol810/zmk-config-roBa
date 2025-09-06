@@ -150,10 +150,10 @@
 
         win {
             bindings = <
-&trans  &trans        &trans        &trans  &trans                                             &kp F        &kp W  &kp R  &kp Y  &kp P
-&trans  &trans        &trans        &trans  &trans  &trans                      &trans         &kp K        &kp T  &kp N  &kp S  &kp H
-&trans  &trans        &trans        &trans  &trans  &trans                      &trans         &kp G        &kp D  &kp M  &kp J  &kp B
-&trans  &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &mt LEFT_CONTROL SPACE      &kp BACKSPACE  &lt 2 ENTER                       &lt 6 DELETE
+&trans  &trans        &trans        &trans  &trans                                                 &kp F        &kp W  &kp R  &kp Y  &kp P
+&trans  &trans        &trans        &trans  &trans  &trans                          &trans         &kp K        &kp T  &kp N  &kp S  &kp H
+&trans  &trans        &trans        &trans  &trans  &trans                          &trans         &kp G        &kp D  &kp M  &kp J  &kp B
+&trans  &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &mt LEFT_CONTROL LC(SPACE)      &kp BACKSPACE  &lt 2 ENTER                       &lt 6 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
