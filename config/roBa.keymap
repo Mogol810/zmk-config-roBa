@@ -87,7 +87,7 @@
         p: pass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(K) &kp U &kp R &kp A &kp I &kp T &kp O &kp EXCLAMATION &kp N0 &kp N2 &kp N0 &kp NUMBER_3 &kp NUMBER_2 &kp NUMBER_3 &kp EXCLAMATION>;
+            bindings = <&kp EXCLAMATION &kp LS(K) &kp U &kp R &kp A &kp I &kp T &kp O &kp EXCLAMATION &kp N0 &kp N2 &kp N0 &kp NUMBER_3 &kp NUMBER_2 &kp NUMBER_3>;
             label = "PASS";
         };
 
