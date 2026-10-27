@@ -58,7 +58,7 @@
         };
 
         Right_command {
-            bindings = <&kp RIGHT_COMMAND>;
+            bindings = <&kp RIGHT_SHIFT>;
             key-positions = <30 31>;
         };
     };
